@@ -1,0 +1,235 @@
+  /* Reset and base styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+nav ul {
+    display: flex;
+}
+nav ul li {
+    margin-left: 1.5rem;
+}
+.search-cart {
+    display: flex;
+    align-items: center;
+}
+.search-form {
+    margin-right: 1rem;
+}
+.search-input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.cart-icon {
+    position: relative;
+}
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* Main content */
+main {
+    display: flex;
+    margin-top: 2rem;
+}
+.sidebar {
+    width: 250px;
+    margin-right: 2rem;
+}
+.sidebar h2 {
+    margin-bottom: 1rem;
+}
+.sidebar ul li {
+    margin-bottom: 0.5rem;
+}
+.price-filter input {
+    width: 70px;
+    padding: 0.25rem;
+    margin-right: 0.5rem;
+}
+.products {
+    flex-grow: 1;
+}
+.products h1 {
+    margin-bottom: 1.5rem;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.product-info {
+    padding: 1rem;
+}
+.product-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.product-price {
+    color: #666;
+    margin-bottom: 1rem;
+}
+.add-to-cart {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.add-to-cart:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f8f8;
+    margin-top: 2rem;
+    padding: 2rem 0;
+    border-top: 1px solid #ddd;
+}
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.footer-section h3 {
+    margin-bottom: 1rem;
+}
+.social-links a {
+    margin-right: 1rem;
+}
+.hero-section {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 150px 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.display-4 {
+    font-size: 85px;
+    font-style: italic;
+}
+.lead{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.btn {
+    background-color: rgba(238, 212, 144, 0);
+    color: rgb(102, 81, 28);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.btn:hover {
+    background-color: #fff; /* Change background to white on hover */
+    color: #000; /* Change text color to black on hover */
+    transform: scale(1.05); /* Slightly enlarge button */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul {
+        margin-top: 1rem;
+    }
+    nav ul li {
+        margin-left: 0;
+        margin-right: 1rem;
+    }
+    .search-cart {
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .search-form {
+        flex-grow: 1;
+        margin-right: 1rem;
+    }
+    .search-input {
+        width: 100%;
+    }
+    main {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}  

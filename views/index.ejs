@@ -3,9 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>StyleStore - Your Fashion Destination</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="#">StyleStore</a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Deals</a></li>
+                    </ul>
+                </nav>
+                <div class="search-cart">
+                    <form class="search-form">
+                        <input type="search" class="search-input" placeholder="Search products...">
+                    </form>
+                    <div class="cart-icon">
+                        <a href="#">🛒</a>
+                        <span class="cart-count">3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="hero-section" style="background-image: url('assests/images/front.jpg');">
+        <div class="container">
+            <h1 class="display-4">Floral Delights</h1>
+            <p class="lead">Explore our curated collection of premium products</p>
+            <a href="#products" class="btn btn-light btn-lg mt-3">Shop Now</a>
+        </div>
+    </section>
+    <main class="container">
+        <aside class="sidebar">
+            <div>
+                <h2>Categories</h2>
+                <ul>
+                    <li><a href="#">Bridal Bouquets</a></li>
+                    <li><a href="#">Baby Shower</a></li>
+                    <li><a href="#">Birthday Bouquet</a></li>
+                </ul>
+            </div>
+            <div class="price-filter">
+                <h2>Price Range</h2>
+                <input type="number" placeholder="Min">
+                <input type="number" placeholder="Max">
+                <button>Apply</button>
+            </div>
+        </aside>
+        <section class="products">
+            <h1>Featured Products</h1>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Leather Jacket">
+                    <div class="product-info">
+                        <h3 class="product-title">Leather Jacket</h3>
+                        <p class="product-price">$199.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Denim Jeans">
+                    <div class="product-info">
+                        <h3 class="product-title">Denim Jeans</h3>
+                        <p class="product-price">$59.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Sneakers">
+                    <div class="product-info">
+                        <h3 class="product-title">Sneakers</h3>
+                        <p class="product-price">$89.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="/placeholder.svg?height=200&width=200" alt="T-Shirt">
+                    <div class="product-info">
+                        <h3 class="product-title">T-Shirt</h3>
+                        <p class="product-price">$24.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Hoodie">
+                    <div class="product-info">
+                        <h3 class="product-title">Hoodie</h3>
+                        <p class="product-price">$49.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="/placeholder.svg?height=200&width=200" alt="Backpack">
+                    <div class="product-info">
+                        <h3 class="product-title">Backpack</h3>
+                        <p class="product-price">$79.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>StyleStore is your one-stop shop for trendy fashion and accessories.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
